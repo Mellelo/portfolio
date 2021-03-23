@@ -1,0 +1,125 @@
+@font-face {
+	font-family: "Bebas";
+	src: url('../fonts/BebasNeuePro-ExpandedExtraBold.ttf');}
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body {   
+    margin: 5rem 5rem 0rem 5rem;
+    font-family: 'Arvo', serif;
+    color: #1c1c1c;
+    background: rgb(233, 227, 227);}
+    #accueil {
+        overflow: hidden;}
+h1  {
+    font-family: 'Arvo', serif;
+    font-size: 2rem;
+    border-bottom: 2px solid #1c1c1c;}
+    #accueil_h1 {
+    animation-duration: 1s;
+    animation-name: slidein;}
+    #projets_h1 {
+        text-decoration: none;
+        color: #1c1c1c;}
+
+
+/* Menu */
+section {
+    position: relative;
+    width: 50vw;
+    height: 8vw;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    
+    animation-duration: 1s;
+    animation-name: apparition;}
+    section video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        opacity: 69%;
+        object-fit: cover;}
+    #menu_item_1 {
+        width: 15%;}
+    #menu_item_2 {
+        width: 30%;}
+    #menu_item_3 {
+        width: 45%;}
+    section a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 101%;
+        height: 121%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Bebas';
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 10vw;
+        line-height: 1em;
+        text-align: center;
+        color: #1c1c1c;
+        background: rgb(233, 227, 227);}
+    section :hover {
+        mix-blend-mode: multiply;}
+
+
+/* Content */
+.content {
+    margin: 10vh 0rem 0rem 0rem;}
+    .content video { 
+        top: 0;
+        left: 0;}
+    .projet {
+        justify-content: center;
+        margin-bottom: 7rem;}
+    .projet_titre {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Bebas';
+        font-size: 3rem;
+        line-height: 1em;
+        text-align: center;}
+        .projet_titre a {
+            text-decoration: none;
+            color: #1c1c1c;}
+        .projet_titre :hover {
+            text-decoration: underline;}
+    .projet_label {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Arvo', serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2rem;}
+    .projet_video {
+        width: 50%;
+        height: 360px;
+        margin-left: 25%;
+        margin-right: 25%;}
+    .projet_audio {
+        width: 50%;
+        min-width: 20%;
+        margin-left: 25%;
+        margin-right: 25%;}
+
+
+@keyframes slidein {
+    from {transform: translateY(-8rem);}
+    to {transform: translateY(0px);}}
+
+@keyframes apparition {
+    from {transform: translate3d(0px,100%,0px); opacity: 0%;}
+    to {transform: translate3d(0px,0px,0px); opacity: 100%;}}
+  
